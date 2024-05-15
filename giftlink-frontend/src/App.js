@@ -6,14 +6,16 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
+    const navigate = useNavigate();
 
   return (
     <>
         <Navbar/>
         <Routes>
-          {/* the final code will not pass the products to every page, but each page will call the server API */}
           <Route path="/" element={<MainPage />} />
           <Route path="/app" element={<MainPage />} />
+          <Route path="/app/login" element={<LoginPage/>} />
+          <Route path="/app/register" element={<RegisterPage />} />
         </Routes>
         </>
   );
