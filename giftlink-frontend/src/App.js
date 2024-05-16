@@ -6,12 +6,11 @@ import RegisterPage from './components/RegisterPage/RegisterPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-
 function App() {
-    const navigate = useNavigate();
-
+  const navigate = useNavigate();
   return (
     <>
+
         <Navbar/>
         <Routes>
           <Route path="/" element={<MainPage />} />
@@ -22,5 +21,4 @@ function App() {
         </>
   );
 }
-
 export default App;
